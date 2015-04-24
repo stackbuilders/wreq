@@ -1,4 +1,4 @@
-name:                wreq
+name:                wreq-sb
 version:             0.4.0.0
 synopsis:            An easy-to-use HTTP client library.
 description:
@@ -28,7 +28,7 @@ description:
   .
   * Early TLS support via the tls package
 homepage:            http://www.serpentine.com/wreq
-bug-reports:         https://github.com/bos/wreq/issues
+bug-reports:         https://github.com/stackbuilders/wreq/issues
 license:             BSD3
 license-file:        LICENSE.md
 author:              Bryan O'Sullivan <bos@serpentine.com>
@@ -92,7 +92,7 @@ library
     Network.Wreq.Internal.Types
     Network.Wreq.Lens.Machinery
     Network.Wreq.Lens.TH
-    Paths_wreq
+    Paths_wreq_sb
   build-depends:
     psqueues >= 0.2,
     aeson >= 0.7.0.3,
@@ -202,7 +202,7 @@ test-suite tests
     unix-compat,
     uuid,
     vector,
-    wreq
+    wreq-sb
 
 test-suite doctest
   type:           exitcode-stdio-1.0
@@ -224,8 +224,4 @@ test-suite doctest
 
 source-repository head
   type:     git
-  location: https://github.com/bos/wreq
-
-source-repository head
-  type:     mercurial
-  location: https://bitbucket.org/bos/wreq
+  location: https://github.com/stackbuilders/wreq

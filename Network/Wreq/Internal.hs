@@ -46,7 +46,7 @@ import qualified Network.Wreq.Lens as Lens hiding (checkStatus)
 -- This mess allows this module to continue to load during interactive
 -- development in ghci :-(
 #if defined(VERSION_base)
-import Paths_wreq (version)
+import Paths_wreq_sb (version)
 #else
 import Data.Version (Version(..))
 version :: Version
